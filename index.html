@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Elon Danziger’s Portfolio</title>
+	<meta name="author" content="Elon Danziger" />
+	<meta name="description" content="Portfolio for Elon Danziger, UX Designer focused on health, education, and authoring; web and mobile." />
+	<meta name="keywords" content="ux,user experience,user-experience,design,health,education,authoring,web,mobile,ui,user interface" />
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="portfolio.css" />
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="portfolio.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".email").on("click", function(event){
+			    alert("Thanks for your interest! Please drop me a line at: elon.danziger@gmail.com")
+			});
+			$('#fullpage').fullpage({
+				sectionsColor: ['#FBF6F3', 'white', 'white', 'white', 'white'],
+				anchors: ['hello', 'health', 'education', 'authoring', 'contact'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div class="sun">Experience Design<br><a href="" class="email" title="Email"><svg viewBox="0 0 512 512" style="padding-top: 6px;"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg></a><br><a href="https://www.linkedin.com/in/edanziger" class="linkedin" title="LinkedIn"><svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg></a></div>
+
+<ul id="menu">
+	<li class="menuListItem hello noFloat" data-menuanchor="hello"><a href="#hello">Hi, I’m Elon Danziger.</a></li>
+	<li class="menuListItem">I focus on humanizing technology for&nbsp;</li>
+	<li class="menuListItem" data-menuanchor="health"><a href="#health">health</a></li>
+	<li class="menuListItem">,&nbsp;</li>
+	<li class="menuListItem" data-menuanchor="education"><a href="#education">education</a></li>
+	<li class="menuListItem">,&nbsp;</li>
+	<li class="menuListItem">and&nbsp;</li>
+	<li class="menuListItem" data-menuanchor="authoring"><a href="#authoring">content creation</a></li>
+	<li class="menuListItem">.</li>
+</ul>
+<div id="backer"></div>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+	</div>
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="margin-top: 130px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Amphistyle</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Create a new kind of diabetes management app</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">May 2010 to present</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Six years ago my cofounder and I set out to defy the clinical design norm by creating an app with a warm look and feel redolent of the worlds of relaxation and entertainment. Not only inviting, it's super-efficient — a circular control works for each step in the data entry a person with diabetes needs to do every day. With fun animations and sounds, it’s the quickest and pleasantest way to log data and stay healthy. I'll be posting process images shortly.</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage"><img src="imgs/health-diabetes-cover.jpg" height="100%" class=""></div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="margin-top: 130px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Metrodigi</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Build an app for neonatal nurses in the developing world</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">2014–2015</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Global Strategies, a non-profit dedicated to maternal and infant healthcare in the developing world, commissioned a unique app from Metrodigi — part medical expert system, part dosage calculator, part nurses’ instructional guide.  I led the creation of Noviguide, both as a UX designer and as the lead developer (responsible for 40% of commits).  Capturing all the nuances of newborn medical protocol made this one of the most complex apps I have ever worked on — yet it looks like one of the simplest.  Making the very hard look very easy is a core aim of any designer.</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage"><img src="imgs/health-noviguide-summary.png" height="100%" class=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="padding-top: 80px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Ellucian</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Help create the first learning platform for Competency-Based Education</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">2015–present</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Currently I work for Ellucian, the leading provider of higher-education software in the US and abroad, with roots going back 30 years. I focus on Ellucian’s newest offering, an innovative learning platform for Competency-Based Education called Brainstorm.  I recently completed a visual redesign and have designed a number of new features, with many more on the way!</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage" style="height: 50vh;"><img src="imgs/education-ellucian.jpg" height="100%" class=""></div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="padding-top: 100px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Metrodigi</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Help Pearson add some digital awesome to its textbooks</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">2014–2015</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Interactivity can transform the educational experience.  Beginning in 2014 I led the creation of hundreds of small interactives for Pearson, one of the largest higher-education publishers in the world, which had retained Metrodigi’s services. Digital maps, charts, and figures can offer much richer experiences than traditional static content by chunking it down in ways that would take up too much space on paper. The interactive shown lets students tackle the complexity of a data-rich world map by walking through datasets one layer at a time.</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage" style="height: 60vh;"><img src="imgs/education-widget.jpg" height="100%" class=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="padding-top: 70px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Blurb</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Make book creation easier so more books get made</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">Spring 2012</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Blurb has a significant share of the market for printed photo books thanks to a variety of products targeted at different personas and project types.  I worked on several, including this “Instabook” product helping people quickly turn digital memories on Facebook or Instagram into printed keepsakes.  I added a “hopper” to facilitate photo selection (not seen here), hid tools not needed by most users behind a button for a more streamlined interface, and added an elementary cover creator to keep users busy during some server load-time. The result was a better experience that improved conversions and helped more people preserve digital photos in the more permanent form of a photo book.</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage" style="height: 60vh;"><img src="imgs/content-blurb.jpg" height="100%" class=""></div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="ptfgroup">
+				<div class="ptfdesc">
+					<ul class="ptfcover" style="padding-top: 70px;">
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Blurb</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Reimagine an iPhone story-creation app for iPad</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">Second half of 2010</div></li>
+						<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">I also worked on Blurb Mobile, an iOS app for weaving photos, videos, and audio into a short, shareable multimedia story.  My main task was to adapt the iPhone version to the recently released iPad, soup to nuts.  I needed to create a design for the larger form factor, while adhering to the basic architecture and visual style of the original app.  I also did most of the engineering work for the iPad adaptation, as a true designer/developer. I was lucky to be able to try some more experimental interactions, such as an editing bar the user swiped vertically to enter and exit edit mode.  With some coachmarks, it became an accepted part of the grammar and personality of the app.</div></li>
+					</ul>
+				</div>
+				<div class="ptfimage" style="height: 55vh;"><img src="imgs/content-blurb-bar.gif" height="100%" class=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
