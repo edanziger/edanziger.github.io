@@ -77,10 +77,11 @@ p {
 	z-index: 70;
 	width: 200px;
 	height: 200px;
-	padding: 28px 14px 10px;
-	float: right;
+	padding: 5px;
+	background-color: white;
 	border-bottom-left-radius: 100%;
-	background-color: #333;
+}
+h2 {
 	font-family: "Playfair Display", Georgia, serif;
 	color: white;
 	font-size: 30px;
@@ -88,14 +89,27 @@ p {
 	font-weight: 400;
 	text-align: right;
 }
-svg {
-	height: 17%;
-	width: 17%;	
+#curvedText {
+	height: 200px;
+	width: 200px;
+	position: absolute;
 	fill: white;
 	float: right;
+	z-index: 10;
 }
-.email {
-	color: white;
+.icon {
+	height: 40%;
+	width: 40%;
+	float: right;
+	margin-right: 25px;
+	margin-top: 25px;
+	z-index: 100;
+}
+.iconAnchor {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	z-index: 100;
 }
 .section {
 	text-align:center;
