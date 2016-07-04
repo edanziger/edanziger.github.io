@@ -594,6 +594,7 @@
         * Works over the DOM structure to set it up for the current fullpage optionss.
         */
         function prepareDom(){
+
             container.css({
                 'height': '100%',
                 'position': 'relative'
@@ -612,6 +613,7 @@
 
              //styling the sections / slides / menu
             $(SECTION_SEL).each(function(index){
+
                 var section = $(this);
                 var slides = section.find(SLIDE_SEL);
                 var numSlides = slides.length;
@@ -758,6 +760,8 @@
 
             if(options.controlArrowColor!='#fff'){
                 section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
+                console.log("adding text for " + sectionIndex + " / " + slideIndex);
+                section.find(SLIDES_ARROW_NEXT_SEL).html(nextForSectionAndSlide(sectionIndex,slideIndex));
                 section.find(SLIDES_ARROW_PREV_SEL).css('border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
             }
 
@@ -1765,6 +1769,23 @@
             oldPageY = e.pageY;
         }
 
+        function nextForSectionAndSlide(sectionIndex, slideIndex) {
+            var phrase = [
+                ['',''],
+                ['Explore the process'],
+                ['Learn about the app','Blah'],
+                ['Examine the changes','Blah'],
+                ['Check out the iPad adaptation','Blah'],
+                ['Learn about widgets','Blah'],
+                ['See our recent redesign','Blah']
+            ];
+            var phrase;
+            var nextPhrase;
+            nextPhrase = phrase[sectionIndex][slideIndex];
+            console.log(">> " + nextPhrase);
+            if(nextPhrase) return nextPhrase; else return("[" + sectionIndex + " " + slideIndex + "]");
+        }
+
         /**
         * Scrolls horizontal sliders.
         */
@@ -1809,6 +1830,9 @@
 
                 //hidding it for the last slide, showing for the rest
                 section.find(SLIDES_ARROW_NEXT_SEL).toggle(!destiny.is(':last-child'));
+                section.find(SLIDES_ARROW_NEXT_SEL).toggle(true);
+
+                section.find(SLIDES_ARROW_NEXT_SEL).html(nextForSectionAndSlide(sectionIndex,slideIndex));
             }
 
             //only changing the URL if the slides are in the current section (not for resize re-adjusting)

@@ -112,7 +112,7 @@ h2 {
 	z-index: 100;
 }
 .section {
-	text-align:center;
+	text-align: left;
 }
 .menuListItem {
 	float: left;
@@ -138,6 +138,31 @@ h2 {
 	width: auto;
 	border-bottom: 1px solid rgba(51, 39, 45, 0.2);
 	font-size: 24px;
+}
+.fp-controlArrow.fp-next {
+	margin-top: 0;
+	width: auto;
+	height: 20px;
+	left: 65%;
+	right: initial;
+	border: none;
+	padding: 6px 15px 2px 15px;
+    background-color: black;
+	font-family: Signika, sans-serif;
+	font-size: 14px;
+	text-align: center;
+    color: white;
+}
+.fp-controlArrow.fp-next:after {
+	content: "▶";
+	font-size: 10px;
+	padding-left: 10px;
+}
+.fp-controlArrow.fp-prev {
+	margin-top: 6px;
+	left: 62.5%;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent black transparent transparent;
 }
 #menu {
 	position: absolute;
@@ -172,19 +197,41 @@ h2 {
 	left: 0;
 }
 
+.indented {
+	padding-left: 50px;
+}
+.ptfcoverheadline {
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+}
+.ptfcoverdate {
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #333;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+.ptfblurb {
+	font-family: Signika, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 34px;
+	color: #333;
+}
+.ptfimage {
+	float: left;
+	clear: none;
+}
+
 .ptfdesc {
 	float: left;
 	margin-left: 100px;
 	margin-top: 146px;
-	width: 40%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
-}
-.ptfimage {
-	float: left;
-	margin-top: 146px;
-	height: 70vh;
-	clear: none;
 }
 .ptfcover {
 	margin-top: 0;
