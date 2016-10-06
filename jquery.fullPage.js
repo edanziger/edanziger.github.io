@@ -1772,12 +1772,12 @@
         function nextForSectionAndSlide(sectionIndex, slideIndex) {
             var phrase = [
                 ['',''],
-                ['Explore the process'],
-                ['Learn about the app','Blah'],
-                ['Examine the changes','Blah'],
-                ['Check out the iPad adaptation','Blah'],
-                ['Learn about widgets','Blah'],
-                ['See our recent redesign','Blah']
+                ['Redesigning the interface','Gathering user feedback','Elucidating workflows'],
+                ['Designing an interactive','Taking on National Geographic','How we scaled'],
+                ['See the competition','Analyze the tasks','Add emotion & refine','See the results'],
+                ['See a clinic','The material we received','The interface we produced'],
+                ['Form factors compared','Empowering storytellers'],
+                ['The album challenge','Hiding features','Redirecting attention']
             ];
             var phrase;
             var nextPhrase;
@@ -1830,7 +1830,7 @@
 
                 //hidding it for the last slide, showing for the rest
                 section.find(SLIDES_ARROW_NEXT_SEL).toggle(!destiny.is(':last-child'));
-                section.find(SLIDES_ARROW_NEXT_SEL).toggle(true);
+                // section.find(SLIDES_ARROW_NEXT_SEL).toggle(true);
 
                 section.find(SLIDES_ARROW_NEXT_SEL).html(nextForSectionAndSlide(sectionIndex,slideIndex));
             }

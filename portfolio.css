@@ -8,7 +8,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration: none;
-	color: rgb(51,51,51);
+	color: #777;
 	font-weight: bold;
 }
 table {
@@ -117,11 +117,27 @@ h2 {
 .menuListItem {
 	float: left;
 }
+a.alwaysBlack {
+	color: black;
+}
+.bottomPadding {
+	padding-bottom: 6px;
+}
+.projectLink {
+	color: #777;
+	margin-top: 3px;
+	margin-right: 2px;
+	padding-right: 3px;
+	padding-top: 2px;
+	text-align: center;
+	font-family: Signika, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
 .noFloat {
 	float: none;
 }
 #menu li a {
-	color: #333;
 }
 #menu li a:hover, #menu li.active a {
 	color: #4B939A;
@@ -139,11 +155,14 @@ h2 {
 	border-bottom: 1px solid rgba(51, 39, 45, 0.2);
 	font-size: 24px;
 }
+.fp-controlArrow {
+	top: 85%;
+}
 .fp-controlArrow.fp-next {
 	margin-top: 0;
 	width: auto;
 	height: 20px;
-	left: 65%;
+	left: 37.5%;
 	right: initial;
 	border: none;
 	padding: 6px 15px 2px 15px;
@@ -154,19 +173,19 @@ h2 {
     color: white;
 }
 .fp-controlArrow.fp-next:after {
-	content: "▶";
+	content: "▶\FE0E";
 	font-size: 10px;
 	padding-left: 10px;
 }
 .fp-controlArrow.fp-prev {
 	margin-top: 6px;
-	left: 62.5%;
+	left: 35%;
     border-width: 8px 10px 8px 0;
     border-color: transparent black transparent transparent;
 }
 #menu {
 	position: absolute;
-	top: 2vh;
+	top: 1vh;
 	left: 4%;
 	height: 80px;
 	z-index: 70;
@@ -203,29 +222,34 @@ h2 {
 .ptfcoverheadline {
 	font-family: "Playfair Display", Georgia, serif;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 36px;
+	line-height: 42px;
 	color: black;
 }
 .ptfcoverdate {
-	font-family: "Playfair Display", Georgia, serif;
+	font-family: Signika, sans-serif;
 	font-weight: normal;
 	font-size: 12px;
 	color: #333;
-	margin-top: 5px;
-	margin-bottom: 25px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 .ptfblurb {
-	font-family: Signika, sans-serif;
+	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 34px;
 	color: #333;
+	margin-top: 5px;
 }
 .ptfimage {
-	float: left;
-	clear: none;
+	margin-left: 50px;
 }
-
+.ptfimageoverlay {
+	position: absolute;
+	top: 80px;
+	right: 34px;
+}
 .ptfdesc {
 	float: left;
 	margin-left: 100px;

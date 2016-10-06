@@ -20,8 +20,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#FBF6F3', 'white', 'white', 'white', 'white'],
-				anchors: ['hello', 'health', 'education', 'authoring', 'contact'],
+				sectionsColor: ['#FBF6F3', 'white', 'white', 'white', 'white', 'white', 'white'],
+				anchors: ['hello', '1', '2', '3', '4', '5', '6'],
 				menu: '#menu',
 				scrollingSpeed: 1000,
 				loopHorizontal: false
@@ -36,15 +36,14 @@
 		<a href="https://www.linkedin.com/in/edanziger" class="iconAnchor" title="LinkedIn"><div class="icon"><svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg></div></a></div> -->
 
 		<ul id="menu">
-			<li class="menuListItem hello noFloat" id="myname" data-menuanchor="hello"><a href="#hello">Hi, I’m Elon Danziger.</a></li>
-			<li class="menuListItem">I focus on humanizing technology for&nbsp;</li>
-			<li class="menuListItem" data-menuanchor="health"><a href="#health">health</a></li>
-			<li class="menuListItem">,&nbsp;</li>
-			<li class="menuListItem" data-menuanchor="education"><a href="#education">education</a></li>
-			<li class="menuListItem">,&nbsp;</li>
-			<li class="menuListItem">and&nbsp;</li>
-			<li class="menuListItem" data-menuanchor="authoring"><a href="#authoring">content creation</a></li>
-			<li class="menuListItem">.</li>
+			<li class="menuListItem hello noFloat" id="myname" data-menuanchor="hello"><a class="alwaysBlack" href="#hello">Hi, I’m Elon Danziger.</a></li>
+			<li class="menuListItem bottomPadding">I focus on humanizing technology for health, education, and content creation.&nbsp;&nbsp;</li>
+			<li class="menuListItem projectLink" data-menuanchor="1"><a href="#1">1&nbsp;</a></li>
+			<li class="menuListItem projectLink" data-menuanchor="2"><a href="#2">2&nbsp;</a></li>
+			<li class="menuListItem projectLink" data-menuanchor="3"><a href="#3">3&nbsp;</a></li>
+			<li class="menuListItem projectLink" data-menuanchor="4"><a href="#4">4&nbsp;</a></li>
+			<li class="menuListItem projectLink" data-menuanchor="5"><a href="#5">5&nbsp;</a></li>
+			<li class="menuListItem projectLink" data-menuanchor="6"><a href="#6">6&nbsp;</a></li>
 		</ul>
 		<div id="backer"></div>
 
@@ -54,48 +53,87 @@
 			<div class="section" id="section1">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">I’ve designed &amp; built a new kind of diabetes management app.</div>
-							<div class="ptfcoverdate indented">2010–</div>
-							<div class="ptfblurb indented">My cofounder and I set out to defy the norm by creating an app with a warm look and feel redolent of relaxation and entertainment. It’s inviting and super-efficient — a circular control works for each step in the data entry a person with diabetes needs to do every day. With fun animations and sounds, it’s the quickest and pleasantest way to log data and stay healthy.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I lead design for an innovative learning platform.</div>
+							<div class="ptfcoverdate indented">2015–</div>
+							<div class="ptfblurb indented">I work for Ellucian, the creator of higher-education software used by more than 2,400 colleges and universities in the US and abroad. I focus on Ellucian’s newest offering, Brainstorm, a learning platform for the growing movement known as Competency-Based Education.  Brainstorm is built for self-paced courses that include substantive interaction with an instructor — increasingly seen as the ideal way for adult students in many disciplines to learn.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/health-diabetes-cover.jpg" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/education-ellucian.jpg" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
-					<div class="ptfgroup">
-						<div class="ptfdesc">
-							<ul class="ptfcover" style="margin-top: 130px;">
-								<li class="w-clearfix ptfcoveritem"><div class="coverfield">organization</div><div class="covercontents">Metrodigi</div></li>
-								<li class="w-clearfix ptfcoveritem"><div class="coverfield">charge</div><div class="covercontents bold">Build an app for neonatal nurses in the developing world</div></li>
-								<li class="w-clearfix ptfcoveritem"><div class="coverfield">timeframe</div><div class="covercontents">2014–2015</div></li>
-								<li class="w-clearfix ptfcoveritem"><div class="coverfield">background</div><div class="covercontents">Global Strategies, a non-profit dedicated to maternal and infant healthcare in the developing world, commissioned a unique app from Metrodigi — part medical expert system, part dosage calculator, part nurses’ instructional guide.  I led the creation of Noviguide, both as a UX designer and as the lead developer (responsible for 40% of commits).  Capturing all the nuances of newborn medical protocol made this one of the most complex apps I have ever worked on — yet it looks like one of the simplest.  Making the very hard look very easy is a core aim of any designer.</div></li>
-							</ul>
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-ellucian-redesign.gif" height="350vh" class=""></div>
 						</div>
-						<div class="ptfimage"><img src="imgs/health-noviguide-summary.png" height="100%" class=""></div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">One of my first assignments was to update Brainstorm’s visuals.  A sample screen as I inherited it and as it is now are shown in the animated reveal to the left.  There were plenty of technical challenges — across dozens of page layouts and page elements, changes had to be almost entirely limited to CSS. Building a consensus around a new visual direction is always a feat of persuasion, but I managed it, and the end result has had a very positive reception internally and externally.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-ellucian-usability.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">UX has been as much a part of my job as UI detailing.  Ellucian believes strongly in user testing to ensure an excellent user experience, and in spring 2016 the 30-person UX department organized a large-scale, in-person testing effort. I conducted eight scripted tests for my product.  I analyzed and shared my results, including screen-by-screen observations supported by user quotes.  I made recommendations for improvement, and we have implemented a number already.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-ellucian-flows.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">One focus of the user testing was a complex workflow that we found did stymie users.  I proposed a radical simplification that is still being detailed out.  The graphics to the left indicate how I presented the problem and solution to internal stakeholders to raise awareness, gather feedback, and build consensus for a fix.<br><br>My work at Ellucian has also included new product features, refinements, and special projects — including a big one around responsive design.</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="section" id="section2">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">I contributed to software that helps nurses in the developing world follow neonatal protocol.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I helped a company scale from one learning object to tens of thousands.</div>
 							<div class="ptfcoverdate indented">2014–2015</div>
-							<div class="ptfblurb indented">Global Strategies, a non-profit dedicated to maternal and infant healthcare in the developing world, commissioned a unique app from Metrodigi — part medical expert system, part dosage calculator, part nurses’ instructional guide.  I led the creation of Noviguide, both as a UX designer and as the lead developer (responsible for 40% of commits).  Capturing all the nuances of newborn medical protocol made this one of the most complex apps I have ever worked on — yet it looks like one of the simplest.  Making the complicated simple is a core aim of any technology.</div>
+							<div class="ptfblurb indented">Digital diagrams, maps, and galleries can offer rich educational experiences by chunking out concepts and responding to student interest in ways paper illustrations just can’t.  Pearson, recognizing this, engaged the agency I worked for to create hundreds of small interactives for higher-education textbooks.  My work designing and coordinating the development of these interactives led to a huge ramping-up of our work for Pearson and other publishers, and to my promotion to management.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/health-noviguide-summary.png" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/education-md-widget.jpeg" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-md-gallery.jpeg" height="350vh" class=""></div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">We began the design of each “widget” by discussing the figure from the printed textbook with Pearson editors.  Sometimes, as in the case of an art history gallery, they then requested multiple ideas for a “widget.”  My team and I produced seven concepts for using interactivity to weave together image and description.  In the enlarged scheme, I sought to include a “concept map” at the left, showing the student how each image in the gallery related to the others.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-md-ngl.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">My team, which grew to 14 people, tackled a variety of projects, including this National Geographic Learning K-5 science textbook.  We overcame major challenges around accessibility, localization, codebase versioning, and e-reader compatibility.<br><br>Throughout, I also worked on conference samples and client pitches, including the one for this project, and once engaged, clients knew me as a primary point of contact.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/education-md-portal.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Eventually Metrodigi’s work for Pearson became so extensive that we needed to scale our operations.  I led our team in creating a private web app that allowed us to track thousands of interactives across dozens of titles.  We included workflow tools so that authors and editors could input material for now-standardized interactive types, and eventually we offered a WYSIWYG interface so interactives could be created by the client without our committing developer time.  We ultimately outproduced and outcompeted our better-funded rival, Inkling.</div>
 						</div>
 					</div>
 				</div>
@@ -103,21 +141,54 @@
 			<div class="section" id="section3">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">I improved a book creation experience so that more books get finished and printed.</div>
-							<div class="ptfcoverdate indented">Spring 2012</div>
-							<div class="ptfblurb indented">I worked on Blurb’s “Instabook” product, which helps people quickly turn digital memories on Facebook or Instagram into printed keepsakes.  I hid tools not needed by most users behind a button for a more streamlined interface, added a “hopper” to facilitate photo selection (not seen here), and designed an elementary cover creator to keep users busy during some server load-time. The result was a better experience that improved conversions and helped more people preserve digital photos in the more permanent form of a photo book.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I designed &amp; built a new kind of diabetes management app.</div>
+							<div class="ptfcoverdate indented">2010–</div>
+							<div class="ptfblurb indented">I set out with my cofounder, a person with Type 1 Diabetes since childhood, to create a medical app with a uniquely warm look and feel, redolent of relaxation and entertainment. It’s inviting and super-efficient — a circular control works for each step in the data entry a person with diabetes needs to do every day. With fun animations and sounds, it’s the quickest and pleasantest way to log data and stay healthy.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/content-blurb.jpg" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/health-lf-cover.jpg" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-lf-predecessors.jpeg" height="350vh" class=""></div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Our predecessors in the App Store hewed to very traditional user interfaces.  They look like paper log books made interactive through businesslike data-input controls.<br><br>To my cofounder and me, they felt like a dismal place for people with a difficult condition to have to spend hours each week logging and reviewing health-related data.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-lf-inputs.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">I began by analyzing the steps for making each type of log entry, which could be simplified to multi-select (which of several meds was taken, for example), quantitative input, and time entry (when the action occurred).<br><br>After trying a number of conventional ideas, I found a way to make circular controls for each input type, and pitched my cofounder on delightful animated transitions between them.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-lf-design.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Working with an illustrator and another designer, we developed a visual style for the interface.  It was important to my cofounder to avoid the color red — so reminiscent of stressful clinical situations — and stick to relaxing colors and forms.<br><br>I then explored every detail of the interface, including the positions and choreography of the Add Note and Save buttons, so crucial to an easy, fluid experience.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-lf-reviews.jpeg" height="350vh" class=""></div>
+							<div class="ptfimageoverlay"><img src="imgs/health-demo.gif" height="200vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">In November 2010, six months after beginning the project, our app was on the App Store.  I wrote all the code, front and back end. My cofounder was happy.<br><br>And the app soon found an audience.  We received positive write-ups in health blogs and hundreds of emails.  In the years since we’ve refined details and added features.</div><a href="https://itunes.apple.com/us/app/logfrog-db-leap-in-diabetes/id398879753?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;margin-top:16px;cursor:pointer;"></a>
 						</div>
 					</div>
 				</div>
@@ -125,43 +196,71 @@
 			<div class="section" id="section4">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">I reimagined an iPhone story-creation app for iPad.</div>
-							<div class="ptfcoverdate indented">2010</div>
-							<div class="ptfblurb indented">I worked on Blurb Mobile, an iOS app for weaving photos, videos, and audio into a short, shareable multimedia story.  My main task was to adapt the iPhone version to the recently released iPad.  I needed to create a design for the larger form factor, while adhering to the basic architecture and visual style of the original app.  I also did most of the engineering work for the iPad adaptation.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I contributed to technology that helps nurses care for newborns.</div>
+							<div class="ptfcoverdate indented">2014–</div>
+							<div class="ptfblurb indented"><a href="www.globalstrategies.org">Global Strategies</a>, a non-profit dedicated to maternal and infant healthcare in the developing world, commissioned a unique app called Noviguide from a design/development agency I worked for.  Part medical expert system, part dosage calculator, part instructional guide, it captures all the nuances of newborn medical protocol to ensure the highest standard of care.  I led the creation of Noviguide, both as a UX designer and as lead developer.  It is one of the most complex apps I have ever worked on — yet it looks like one of the simplest.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/content-blurb-bar.gif" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/health-ng-cover.png" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
-					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-ng-nurse.jpeg" height="350vh" class=""></div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">From years of work with neonatal clinics in sub-Saharan Africa, Global Strategies discovered a gap in medical care that technology could fill.  Especially in rural areas, nurses often need to make care decisions without immediate access to a doctor.<br><br>Steps in the standard medical protocol are easily forgotten, and dosage calculations may require reference material that is hard to find or out of date.</div>
 						</div>
-					</div>
+				</div>
+				<div class="slide">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-ng-conditions.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Digitizing a medical protocol is no easy task!  The doctors we worked with provided dozens of flowcharts and thousands of lines of conditions describing the way the application they envisioned should work.<br><br>Translating all this raw material to computer code fell to me and a development team I managed.  It was extremely challenging but ultimately successful.</div>
+						</div>
+				</div>
+				<div class="slide">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/health-ng-summary.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">From all that complexity emerged a colorful, inviting user interface that the visual design team and I developed.  One of my focuses was the summary page, where discussion with the neonatologist led to a two-part interface.  I made it mirror the way doctors keep notes: first, observations and assessment of the patient, and then the intended treatment plan.<br><br>Noviguide has been well-received by clinics in South Africa and Uganda, where its effectiveness is being measured by medical researchers.</div>
+						</div>
 				</div>
 			</div>
 			<div class="section" id="section5">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">I helped my company scale from one learning object to tens of thousands.</div>
-							<div class="ptfcoverdate indented">2014–2015</div>
-							<div class="ptfblurb indented">Digital maps, charts, and figures can offer much richer educational experiences than traditional static content by chunking it down in ways that would take up too much space on paper.  I led the creation of hundreds of small interactives for Pearson, one of the largest higher-education publishers in the world, which had retained Metrodigi’s services, and then led the creation of a web app for programmatic construction of these interactives.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I reimagined an iPhone story-creation app for iPad.</div>
+							<div class="ptfcoverdate indented">2010</div>
+							<div class="ptfblurb indented">Blurb Mobile is an iOS app for weaving photos, videos, and audio into short, shareable multimedia stories.  My main task was to adapt the iPhone version for the recently released iPad.  I needed to create a design for the larger form factor, while adhering to the basic architecture and visual style of the original app.  I also did most of the engineering work for the iPad adaptation.<br><br>One of the new interactions I most enjoyed creating was a swipeable toolbar used to toggle between view and edit mode.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/education-widget.jpg" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/content-mobile-bar.gif" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/content-mobile-form-factors.jpeg" height="350vh" class=""></div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">In adapting the app, I created a custom tab bar control for a more Blurb-branded feel and streamlined the interface.  For example, detailed story metadata was hidden behind an info icon, which on the phone opened a separate metadata page. On the iPad, I could show the metadata in a translucent overlay animating out over the story thumbnails.  Throughout, I needed to find ways to rethink groups of phone-sized pages, sometimes creating a combined page, other times embedding secondary pages in popovers displayed on the primary page.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/content-mobile-story.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Blurb Mobile had hundreds of thousands of downloads and passionate users, but because the road to a business return was unclear, the company has since sunsetted the app.  Thousands of brilliantly creative photo stories that people created, shared, and discovered on Blurb Mobile remain the legacy of this ambitious project from the peak of app mania.</div>
 						</div>
 					</div>
 				</div>
@@ -169,21 +268,43 @@
 			<div class="section" id="section6">
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="ptfcoverheadline indented">Today I lead design for a learning platform.</div>
-							<div class="ptfcoverdate indented">2015–</div>
-							<div class="ptfblurb indented">I work for Ellucian, the leading provider of higher-education software in the US and abroad. I focus on Ellucian’s newest offering, a learning platform for Competency-Based Education called Brainstorm.</div>
+						<div class="col-md-6 col-xs-8">
+							<div class="ptfcoverheadline indented">I helped people create books through a simpler interface.</div>
+							<div class="ptfcoverdate indented">Spring 2012</div>
+							<div class="ptfblurb indented">Blurb offers several digital products to let people create professional print books.  I worked on the “Instabook” product, aimed at casual bookmakers who want to quickly turn digital memories from Facebook or Instagram into printed keepsakes.  The product hadn’t been updated after Facebook albums came into vogue, and usage had been below expectations.  I was on the team tasked with finding ways to improve the experience.  After several months of design and development, book completion (and revenue) went up and the project was considered a success.</div>
 						</div>
-						<div class="col-md-2">
-							<div class="ptfimage"><img src="imgs/education-ellucian.jpg" height="250vh" class=""></div>
+						<div class="col-md-2 col-xs-2">
+							<div class="ptfimage"><img src="imgs/content-bookify-cover.jpeg" height="300vh" class=""></div>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/content-bookify-hopper.jpeg" height="350vh" class=""></div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">The product manager shared data showing that users were gathering photos from multiple Facebook albums, a use case that hadn’t been common when the interface was designed.  A heuristic analysis suggested to us that as users went through their journey of selecting photos, they would lose track of photos they’d chosen from other albums.  I proposed a “hopper” at the right, which would give users a rough preview of the book they were constructing and a feeling of progress. After a prototype tested well, we built it.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/content-bookify-modes.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">In discussions with the product manager and the Chief Product Officer, another observation came up — users were suffering “paralysis by analysis” when confronted with the many tools in the interface, and dropping off in the middle of creation.  To speed them through, we put only the simplest controls in the main interface, and added a small “Switch to Advanced Editing” button at the upper right that launched a different mode (signaled by a different background) with more complex editing features.</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row">
+						<div class="col-md-5 col-xs-5">
+							<div class="ptfimage"><img src="imgs/content-bookify-loading.jpeg" height="350vh" class=""></div>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<div class="ptfblurb">Finally, we knew users were dropping off during book creation, which could take a minute or two.  I suggested using this downtime for a simple but essential step in the book process — adding a book title and author name, which we could let users preview as they typed.  Afterward we could also show a sample spread while the book was generated, with a reassuring message below.<br><br>The net result of these changes was a better experience that improved conversions and helped more people preserve their digital memories in high-quality photo books.</div>
 						</div>
 					</div>
 				</div>
