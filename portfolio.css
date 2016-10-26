@@ -143,6 +143,9 @@ a.alwaysBlack {
 	color: #4B939A;
 /*	color: #393F73;  */
 }
+button:focus {
+	outline:0;
+}
 .fp-viewing-hello #menu {
 	position: absolute;
 	top: 30vh;
@@ -160,15 +163,16 @@ a.alwaysBlack {
 }
 .fp-controlArrow.fp-next {
 	margin-top: 0;
-	width: auto;
-	height: 20px;
-	left: 37.5%;
+	width: 500px;
+	height: 48px;
+	left: 32.5%;
 	right: initial;
-	border: none;
-	padding: 6px 15px 2px 15px;
-    background-color: black;
+	border: 1px solid #4B939A;
+	padding: 3px 15px 2px 15px;
+    background-color: #4B939A;
 	font-family: Signika, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: bold;
 	text-align: center;
     color: white;
 }
@@ -177,11 +181,124 @@ a.alwaysBlack {
 	font-size: 10px;
 	padding-left: 10px;
 }
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-grow:hover {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  background-color: #295f65;
+}
+.hvr-sweep-to-right {
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  background: #295f65;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+}
+/* Sweep */
+@-webkit-keyframes hvr-sweep {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  70% {
+    -webkit-transform: translateX(235%);
+    transform: translateX(235%);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+@keyframes hvr-sweep {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  70% {
+    -webkit-transform: translateX(235%);
+    transform: translateX(235%);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+/*.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-animation-name: hvr-sweep;
+  animation-name: hvr-sweep;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+*/
+
 .fp-controlArrow.fp-prev {
-	margin-top: 6px;
-	left: 35%;
-    border-width: 8px 10px 8px 0;
-    border-color: transparent black transparent transparent;
+	background: none;
+	border: none;
+	margin-top: 4px;
+	left: 33%;
+	width: 40px;
+	color: #4B939A;
+}
+.fp-controlArrow.fp-prev:after {
+	content: "◀\FE0E";
+	font-size: 15px;
+	padding-left: 10px;
+}
+.fp-controlArrow.fp-prev:hover {
+	color: black;
 }
 #menu {
 	position: absolute;

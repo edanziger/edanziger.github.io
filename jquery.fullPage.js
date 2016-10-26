@@ -756,11 +756,10 @@
         * Creates the control arrows for the given section
         */
         function createSlideArrows(section){
-            section.find(SLIDES_WRAPPER_SEL).after('<div class="' + SLIDES_ARROW_PREV + '"></div><div class="' + SLIDES_ARROW_NEXT + '"></div>');
+            section.find(SLIDES_WRAPPER_SEL).after('<button class="' + SLIDES_ARROW_PREV + '"></button><button class="' + SLIDES_ARROW_NEXT + ' hvr-pulse-grow"></button>');
 
             if(options.controlArrowColor!='#fff'){
                 section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
-                console.log("adding text for " + sectionIndex + " / " + slideIndex);
                 section.find(SLIDES_ARROW_NEXT_SEL).html(nextForSectionAndSlide(sectionIndex,slideIndex));
                 section.find(SLIDES_ARROW_PREV_SEL).css('border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
             }
@@ -1231,10 +1230,13 @@
                 //respect loopHorizontal settin
                 if (!options.loopHorizontal) return;
 
+                // COME BACK HERE
                 if(direction === 'prev'){
                     destiny = currentSlide.siblings(':last');
                 }else{
-                    destiny = currentSlide.siblings(':first');
+                    console.log(":::: " + activeSection.index(SECTION_SEL));
+                    FP.moveTo(activeSection.index(SECTION_SEL) + 1,0);
+                    return;
                 }
             }
 
@@ -1772,17 +1774,16 @@
         function nextForSectionAndSlide(sectionIndex, slideIndex) {
             var phrase = [
                 ['',''],
-                ['Redesigning the interface','Gathering user feedback','Elucidating workflows'],
-                ['Designing an interactive','Taking on National Geographic','How we scaled'],
-                ['See the competition','Analyze the tasks','Add emotion & refine','See the results'],
-                ['See a clinic','The material we received','The interface we produced'],
-                ['Form factors compared','Empowering storytellers'],
-                ['The album challenge','Hiding features','Redirecting attention']
+                ['Redesigning the interface','Gathering user feedback','Elucidating workflows','Next: Interactives'],
+                ['Designing an interactive','Taking on National Geographic','How we scaled', 'Next: Diabetes app'],
+                ['See the competition','Analyze the tasks','Add emotion & refine','See the results', 'Next: Nursing aid'],
+                ['See a clinic','The material we received','The interface we produced','Next: Storytelling app'],
+                ['Form factors compared','Empowering storytellers','Next: Improving a workflow'],
+                ['The album challenge','Hiding features','Redirecting attention','']
             ];
             var phrase;
             var nextPhrase;
             nextPhrase = phrase[sectionIndex][slideIndex];
-            console.log(">> " + nextPhrase);
             if(nextPhrase) return nextPhrase; else return("[" + sectionIndex + " " + slideIndex + "]");
         }
 
@@ -1824,14 +1825,14 @@
                 lazyLoad(destiny);
             }
 
-            if(!options.loopHorizontal && options.controlArrows){
-                //hidding it for the fist slide, showing for the rest
+            if(options.controlArrows){
+                //hiding it for the first slide, showing for the rest
                 section.find(SLIDES_ARROW_PREV_SEL).toggle(slideIndex!==0);
 
-                //hidding it for the last slide, showing for the rest
-                section.find(SLIDES_ARROW_NEXT_SEL).toggle(!destiny.is(':last-child'));
-                // section.find(SLIDES_ARROW_NEXT_SEL).toggle(true);
+                //hiding it for the last slide, showing for the rest
+                // section.find(SLIDES_ARROW_NEXT_SEL).toggle(!destiny.is(':last-child'));
 
+                // section.find(SLIDES_ARROW_NEXT_SEL).toggle(true);
                 section.find(SLIDES_ARROW_NEXT_SEL).html(nextForSectionAndSlide(sectionIndex,slideIndex));
             }
 
