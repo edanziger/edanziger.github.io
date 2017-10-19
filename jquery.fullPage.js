@@ -1779,7 +1779,7 @@
                 ['See the competition','Analyze the tasks','Add emotion & refine','See the results', 'Next: Nursing aid'],
                 ['See a clinic','The material we received','The interface we produced','Next: Storytelling app'],
                 ['Form factors compared','Empowering storytellers','Next: Improving a workflow'],
-                ['The album challenge','Hiding features','Redirecting attention','']
+                ['The album challenge','Hiding features','Redirecting attention','Go back']
             ];
             var phrase;
             var nextPhrase;
